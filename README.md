@@ -19,6 +19,6 @@ addPlugin('EmojiShortnames');
 When posting a notice, shortnames will be converted to emojis.  
 
 Example:  
-From this: `I like my coffee black, just like my metal :coffee:`
+From this: `I like my coffee black, just like my metal :coffee:`  
 To this: `I like my coffee black, just like my metal 🍮`
 
