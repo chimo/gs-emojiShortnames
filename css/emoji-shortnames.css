@@ -1,3 +1,21 @@
+/* Detect DOM insertions */
+/* http://www.backalleycoder.com/2012/04/25/i-want-a-damnodeinserted/ */
+
+@keyframes nodeInserted {
+    from {
+        opacity: 0.99;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.notice_data-text {
+    animation-duration: 0.001s;
+    animation-name: nodeInserted;
+}
+
 /* AutoComplete styles for Emoji One */
 /* From: https://github.com/Ranks/emojione/blob/591e512a30dff5f4f18a6df0e56a9f7eaf840d07/demos/autocomplete.html#L13 */
 

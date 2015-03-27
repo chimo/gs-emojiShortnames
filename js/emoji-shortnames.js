@@ -1,11 +1,26 @@
 ( function() {
     "use strict";
 
-    var pluginPath = $( "#es" ).attr( "src" ).replace( "js/emoji-shortnames.js", "" );
+    var pluginPath = $( "#es" ).attr( "src" ).replace( "js/emoji-shortnames.js", "" ),
+        insertListener,
+        applyTextcomplete,
+        emojiStrategy;
 
-    $.get( pluginPath + "vendor/emojione/emojione/emoji_strategy.json", function( emojiStrategy ) {
-        // From https://github.com/Ranks/emojione/blob/591e512a30dff5f4f18a6df0e56a9f7eaf840d07/demos/autocomplete.html#L286
-        $( "textarea" ).textcomplete( [ {
+    // Detect DOM Insertions
+    // From: http://www.backalleycoder.com/2012/04/25/i-want-a-damnodeinserted/
+    insertListener = function( e ) {
+        if ( e.animationName === "nodeInserted" ) {
+            applyTextcomplete( $( e.target ) );
+        }
+    };
+    document.addEventListener("animationstart", insertListener, false);
+    document.addEventListener("MSAnimationStart", insertListener, false);
+    document.addEventListener("webkitAnimationStart", insertListener, false);
+
+    // Emojione autocomplete
+    // From: https://github.com/Ranks/emojione/blob/591e512a30dff5f4f18a6df0e56a9f7eaf840d07/demos/autocomplete.html#L286
+    applyTextcomplete = function( $elm ) {
+        $elm.textcomplete( [ {
             match: /\B:([\-+\w]*)$/,
             search: function( term, callback ) {
                 var results = [],
@@ -53,6 +68,13 @@
         {
             footer: '<a href="http://www.emoji.codes" target="_blank">Browse All<span class="arrow">&raquo;</span></a>'
         } );
+
+    };
+
+    $.get( pluginPath + "vendor/emojione/emojione/emoji_strategy.json", function( data ) {
+        emojiStrategy = data;
+
+        applyTextcomplete( $( ".notice_data-text" ) );
     } );
 }() );
 
