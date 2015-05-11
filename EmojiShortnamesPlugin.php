@@ -17,6 +17,7 @@ class EmojiShortnamesPlugin extends Plugin {
      */
     function onStartNoticeSave($notice) {
         $notice->rendered = Emojione::shortnameToUnicode($notice->rendered);
+        $notice->content = Emojione::shortnameToUnicode($notice->content);
 
         return true;
     }
