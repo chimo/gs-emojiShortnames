@@ -39,7 +39,7 @@ class EmojiShortnamesPlugin extends Plugin {
      *
      * @return value
      */
-    function onPluginVersion(&$versions)
+    function onPluginVersion(array &$versions)
     {
         $versions[] = array('name' => 'EmojiShortnames',
                             'version' => self::VERSION,
