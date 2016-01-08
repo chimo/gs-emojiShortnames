@@ -10,7 +10,7 @@ require 'vendor/autoload.php';
 use Emojione\Emojione;
 
 class EmojiShortnamesPlugin extends Plugin {
-    const VERSION = '0.1';
+    const VERSION = '1.0.0';
 
     /**
      * Replace shortnames with emoji
@@ -43,11 +43,11 @@ class EmojiShortnamesPlugin extends Plugin {
     {
         $versions[] = array('name' => 'EmojiShortnames',
                             'version' => self::VERSION,
-                            'author' => 'Stephane Berube',
+                            'author' => 'Chimo',
                             'homepage' => 'https://github.com/chimo/gs-emojiShortnames',
                             'description' =>
                             // TRANS: Plugin description.
-                            _m('TODO.'));
+                            _m('Use emoji shortnames on GNU social'));
         return true;
     }
 
