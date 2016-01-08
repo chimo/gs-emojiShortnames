@@ -2,13 +2,23 @@
 
 Shortnames: http://emoji.codes/
 
-## Installation
+## Installation from release
 
-These instructions assume you have [composer](http://getcomposer.org/) installed.  
+Download the [latest release](https://github.com/chimo/gs-emojiShortnames/releases) and extract it in your `/plugins/` or `/local/plugins/` directory.
 
-Make sure the files are in a folder called `EmojiShortnames` if they're not already  
-Put the folder in your `/plugins/` directory  
-Run `composer require emojione/emojione` in the `/plugins/EmojiShortnames/` directory  
+Tell `/config.php` to use it with the following:
+```php
+addPlugin('EmojiShortnames');
+```
+
+## Installation from git
+
+1. Navigate to your `/plugins/` or `/local/plugins` directory
+1. `git clone https://github.com/chimo/gs-emojiShortnames.git EmojiShortnames`
+1. `cd EmojiShortnames`
+1. `composer install`
+1. `npm install`
+
 Tell `/config.php` to use it with the following:
 ```php
 addPlugin('EmojiShortnames');
@@ -21,4 +31,3 @@ When posting a notice, shortnames will be converted to emojis.
 Example:  
 From this: `I like my coffee black, just like my metal :coffee:`  
 To this: `I like my coffee black, just like my metal 🍮`
-
