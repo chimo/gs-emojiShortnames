@@ -1,5 +1,5 @@
 {
     "require": {
-        "emojione/emojione": "~1.5"
+        "emojione/emojione": "~2.1.0"
     }
 }

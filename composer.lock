@@ -4,20 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2507a541779e8ac5b2e92b6c3b2a54a2",
+    "hash": "e38b24a027fb12eb0dd75f399587ee4c",
+    "content-hash": "81ca6101614117b03e356838525ff120",
     "packages": [
         {
             "name": "emojione/emojione",
-            "version": "v1.5.0",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ranks/emojione.git",
-                "reference": "4e995d819d47908f8777237a08df4702e5ac7d01"
+                "reference": "fd4bb7a26a39e93d0cb4ed90934e9e3f73ebca4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ranks/emojione/zipball/4e995d819d47908f8777237a08df4702e5ac7d01",
-                "reference": "4e995d819d47908f8777237a08df4702e5ac7d01",
+                "url": "https://api.github.com/repos/Ranks/emojione/zipball/fd4bb7a26a39e93d0cb4ed90934e9e3f73ebca4b",
+                "reference": "fd4bb7a26a39e93d0cb4ed90934e9e3f73ebca4b",
                 "shasum": ""
             },
             "require": {
@@ -34,7 +35,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "(CC-BY-SA-4.0 and MIT)"
+                "(CC-BY-4.0 and MIT)"
             ],
             "description": "Emoji One is a complete set of emojis designed for the web. It includes libraries to easily convert unicode characters to shortnames (:smile:) and shortnames to our custom emoji images. PNG and SVG formats provided for the emoji images.",
             "homepage": "http://www.emojione.com",
@@ -48,7 +49,7 @@
                 "smilies",
                 "unicode"
             ],
-            "time": "2015-07-17 08:28:49"
+            "time": "2016-01-29 19:30:25"
         }
     ],
     "packages-dev": [],
