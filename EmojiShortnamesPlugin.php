@@ -10,7 +10,7 @@ require 'vendor/autoload.php';
 use Emojione\Emojione;
 
 class EmojiShortnamesPlugin extends Plugin {
-    const VERSION = '1.0.1';
+    const VERSION = '1.0.2';
 
     /**
      * Replace shortnames with emoji

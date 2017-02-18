@@ -4,28 +4,28 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e38b24a027fb12eb0dd75f399587ee4c",
-    "content-hash": "81ca6101614117b03e356838525ff120",
+    "hash": "9c4f51650b87de46414df1e18e95f01a",
+    "content-hash": "f8a1113f706a5d0bfd2ecee29d44669d",
     "packages": [
         {
             "name": "emojione/emojione",
-            "version": "v2.1.0",
+            "version": "v2.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ranks/emojione.git",
-                "reference": "fd4bb7a26a39e93d0cb4ed90934e9e3f73ebca4b"
+                "reference": "b7735017f97aeea9e2fa9e35adbf25b81deda2ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ranks/emojione/zipball/fd4bb7a26a39e93d0cb4ed90934e9e3f73ebca4b",
-                "reference": "fd4bb7a26a39e93d0cb4ed90934e9e3f73ebca4b",
+                "url": "https://api.github.com/repos/Ranks/emojione/zipball/b7735017f97aeea9e2fa9e35adbf25b81deda2ad",
+                "reference": "b7735017f97aeea9e2fa9e35adbf25b81deda2ad",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.6"
+                "phpunit/phpunit": "~4.6 || ~5.0"
             },
             "type": "library",
             "autoload": {
@@ -49,7 +49,7 @@
                 "smilies",
                 "unicode"
             ],
-            "time": "2016-01-29 19:30:25"
+            "time": "2016-07-16 16:40:56"
         }
     ],
     "packages-dev": [],
