@@ -22,6 +22,13 @@ class EmojiShortnamesPlugin extends Plugin {
         return true;
     }
 
+    function onChrStartRenderNotice(&$raw_content, $profile)
+    {
+        $raw_content = Emojione::shortnameToUnicode($raw_content);
+
+        return true;
+    }
+
     function onEndShowScripts($action) {
         $action->script($this->path('node_modules/jquery-textcomplete/dist/jquery.textcomplete.min.js'));
         $action->script($this->path('vendor/emojione/emojione/lib/js/emojione.min.js'));
