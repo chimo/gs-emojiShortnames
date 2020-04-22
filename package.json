@@ -1,5 +1,5 @@
 {
-  "dependencies" : {
+  "dependencies": {
     "jquery-textcomplete": "~0.8.1"
   }
 }
