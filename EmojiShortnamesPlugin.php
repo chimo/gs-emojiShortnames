@@ -30,8 +30,8 @@ class EmojiShortnamesPlugin extends Plugin {
     }
 
     function onEndShowScripts($action) {
-        $action->script($this->path('node_modules/jquery-textcomplete/dist/jquery.textcomplete.min.js'));
-        $action->script($this->path('vendor/emojione/emojione/lib/js/emojione.min.js'));
+        $action->script($this->path('extlibs/jquery-textcomplete/jquery.textcomplete.min.js'));
+        $action->script($this->path('extlibs/emojione/emojione.min.js'));
         $action->element('script', array('id' => 'es', 'src' => $this->path('js/emoji-shortnames.js')));
     }
 
